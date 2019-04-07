@@ -79,12 +79,17 @@ export default {
           icon: 'bubble_chart',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          // icon: 'apps',
+          title: 'tables',
+          to: '/tables/'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'sabermetrics'
     }
   }
 }
