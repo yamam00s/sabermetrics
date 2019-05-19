@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import ApiRequester from './modules/ApiRequester.js'
+import axios from 'axios'
 
 export default {
   name: 'DataTable',
@@ -46,13 +46,13 @@ export default {
     batterBodyDataList: []
   }),
   async mounted() {
-    const apiRequester = await new ApiRequester(
-      'https://us-central1-scraping-baseball-data-55f5f.cloudfunctions.net/scrapingBaseball'
-    )
-    const resulte = await apiRequester.fetchJsonDataList()
-    this.batterBodyDataList = resulte.data
-    /* eslint-disable no-console */
-    console.log(this.batterBodyDataList)
+    const targetUrl = 'https://us-central1-scraping-baseball-data-55f5f.cloudfunctions.net/scrapingBaseball';
+    this.batterBodyDataList = await axios.get(targetUrl, {
+      params: {
+        league: 'central',
+        type: 'batter'
+      }
+    }).then(res => res.data);
   }
 }
 </script>
