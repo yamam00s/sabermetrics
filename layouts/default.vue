@@ -76,14 +76,9 @@ export default {
           to: '/'
         },
         {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
-        },
-        {
-          // icon: 'apps',
-          title: 'tables',
-          to: '/tables/'
+          icon: 'apps',
+          title: 'Wables',
+          to: '/tables'
         }
       ],
       miniVariant: false,
