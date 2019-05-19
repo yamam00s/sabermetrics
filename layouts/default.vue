@@ -77,7 +77,7 @@ export default {
         },
         {
           icon: 'apps',
-          title: 'Wables',
+          title: 'Tables',
           to: '/tables'
         }
       ],
