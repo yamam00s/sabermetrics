@@ -76,9 +76,24 @@ export default {
           to: '/'
         },
         {
-          icon: 'apps',
-          title: 'Tables',
-          to: '/tables'
+          icon: 'star',
+          title: 'central-batter',
+          to: '/central/batter'
+        },
+        {
+          icon: 'star_border',
+          title: 'central-pitcher',
+          to: '/central/pitcher'
+        },
+        {
+          icon: 'star',
+          title: 'pacific-batter',
+          to: '/pacific/batter'
+        },
+        {
+          icon: 'star_border',
+          title: 'pacific-pitcher',
+          to: '/pacific/pitcher'
         }
       ],
       miniVariant: false,
