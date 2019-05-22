@@ -17,7 +17,7 @@ export default {
     return {
       batterHeaderDataList: [
         { text: '順位', value: 'RANK' },
-        { text: '選手名', value: 'NAME' },
+        { text: '選 手 名', value: 'NAME' },
         { text: '所属球団', value: 'TEAM'},
         { text: '打率', value: 'AVG' },
         { text: '本塁打', value: 'GAMES'},

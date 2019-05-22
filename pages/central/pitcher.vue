@@ -17,7 +17,7 @@ export default {
     return {
       pitcherHeaderDataList: [
         { text: '順位', value: 'RANK' },
-        { text: '選手名', value: 'NAME' },
+        { text: '選 手 名', value: 'NAME' },
         { text: '所属球団', value: 'TEAM' },
         { text: '防御率', value: 'ERA' },
         { text: '登板試合数', value: 'APP' },
@@ -39,7 +39,8 @@ export default {
         { text: '与四球数', value: 'BB' },
         { text: '与死球数', value: 'HBP' },
         { text: '暴投数', value: 'WP' },
-        { text: 'ボーク数', value: 'R' },
+        { text: 'ボーク数', value: 'BK' },
+        { text: '失点数', value: 'R' },
         { text: '自責点数', value: 'ER' },
         { text: '被打率', value: 'AVG' },
         { text: 'K/BB', value: 'K/BB' },
