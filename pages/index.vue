@@ -7,7 +7,7 @@
         >
         <v-card-text>
           <p>
-            プロ野球のデータをスクレイピングして出力します
+            プロ野球のデータをスクレイピングして出力するSPAです
           </p>
           <div class="text-xs-right">
             <em><small>&mdash; yamam00s</small></em>
