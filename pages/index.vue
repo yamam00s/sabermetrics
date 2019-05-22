@@ -7,13 +7,15 @@
         >
         <v-card-text>
           <p>
-            ...
+            プロ野球のデータをスクレイピングして出力します
           </p>
           <div class="text-xs-right">
             <em><small>&mdash; yamam00s</small></em>
           </div>
           <hr class="my-3" />
-          <a href="https://github.com/yamam00s/scraping-baseball-data" target="_blank"
+          <a
+            href="https://github.com/yamam00s/scraping-baseball-data"
+            target="_blank"
             >scraping-baseball-data API GitHub</a
           >
         </v-card-text>
@@ -26,5 +28,4 @@
   </v-layout>
 </template>
 
-<script>
-</script>
+<script></script>
