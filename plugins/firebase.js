@@ -13,3 +13,9 @@ const firebaseConfig = {
 }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
+
+export const auth = firebase.auth()
+
+export const authProviders = {
+  Email: firebase.auth.EmailAuthProvider.PROVIDER_ID
+}
