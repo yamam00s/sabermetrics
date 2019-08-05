@@ -6,9 +6,7 @@
     class="elevation-1"
   >
     <template slot="items" slot-scope="props">
-      <td
-        v-for="item in props.item" :key="item"
-      >
+      <td v-for="item in props.item" :key="item">
         {{ item }}
       </td>
     </template>
@@ -16,13 +14,17 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'DataTable',
   props: {
-    headerDataList: [],
-    bodyDataList: []
+    headerDataList: {
+      type: Array,
+      required: true
+    },
+    bodyDataList: {
+      type: Array,
+      required: true
+    }
   }
 }
 </script>

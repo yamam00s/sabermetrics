@@ -1,8 +1,8 @@
 <template>
   <DataTable
-    :headerDataList="batterHeaderDataList"
-    :bodyDataList="batterBodyDataList"
-  >
+    :header-data-list="batterHeaderDataList"
+    :body-data-list="batterBodyDataList"
+  />
 </template>
 
 <script>
@@ -17,19 +17,20 @@ export default {
   data() {
     return {
       batterHeaderDataList: batterHeaderDataList,
-      batterBodyDataList: [],
-    };
+      batterBodyDataList: []
+    }
   },
   async mounted() {
-    const targetUrl = 'https://us-central1-scraping-baseball-data-55f5f.cloudfunctions.net/scrapingBaseball';
+    const targetUrl =
+      'https://us-central1-scraping-baseball-data-55f5f.cloudfunctions.net/scrapingBaseball'
     this.batterBodyDataList = await axios
-    .get(targetUrl, {
-      params: {
-        league: 'central',
-        type: 'batter'
-      }
-    })
-    .then(res => res.data)
+      .get(targetUrl, {
+        params: {
+          league: 'central',
+          type: 'batter'
+        }
+      })
+      .then(res => res.data)
   }
 }
 </script>
