@@ -2,8 +2,6 @@
 
 > My marvelous Nuxt.js project
 
-https://sabermetrics-7a6fc.firebaseapp.com/
-
 
 ## Build Setup
 
